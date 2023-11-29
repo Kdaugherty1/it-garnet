@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en,de">
+
+<head>
+  <title> My first HTML Document </title>
+  <!-- The head section contains metadata and linked resources/ Behind the scene stuff/ search engines, clickable text-->
+  <meta charset="utf-8" />
+  <meta name="description" content="This is the elevator pitch for your site" />
+  <meta name="author" content="Kalyn Daugherty" />
+  <meta name="keyword" content="UALR, University of Arkansas Little Rock, IT Minor" />
+  <!-- Syntax being used is xhtml. simple rule. always use lowercase tags. -->
+</head>
+
+<body>
+  <!-- Anything in this area is displayed content. -->
+  <h1> HTML5 Reference Document </h1> <!-- Landmarks of the page. -->
+  <section id="forms">
+    <h2 class="section-heading">Forms</h2>
+    <form action="processing-script.php" method="get">
+      <!--Action says whats going to happen when it is submitted.-->
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="full-name">Full Name: </label><input type="text" id-"full-name" name="full-name" /> <!-- self closing what we are putting in there. Keep it limited with what the user can input. Id should have name attribute-->
+        <label for="address">Address: </label>
+        <textarea id="address" name="address"></textarea>
+        <label for="cmf">Favorite Car Manufacturer</label>
+        <select id="cmf" name="cmf">
+          <option value="null">---</option>
+          <option value="b">Bentley</option>
+          <option value="f">Ford</option>
+          <option value="d">Dodge</option>
+          <option value="h">Honda</option>
+          <option selected="selected">---</option>
+        </select>
+        <input type="submit" />
+      </fieldset>
+    </form>
+    <section id="headings">
+      <h2 class="section-heading">Heading</h2> <!-- class is like ID but reusable-->
+      <h1> Heading 1 </h1> <!-- Most important. Generally have 1-->
+      <h2> Heading 2 </h2>
+      <h3> Heading 3 </h3>
+      <h4> Heading 4 </h4>
+      <h5> Heading 5 </h5>
+      <h6> Heading 6 </h6><!-- Least Important. Generally just have 1-->
+    </section> <!-- ID attributes are used to uniquely Id html; headings are of importance-->
+    <section id="text-based-semantics">
+      <h2 class="section-heading">Test Based Semantics</h2>
+      <p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit, sed do<sup>1</sup> eiusmod tempor incididunt ut <strong>labore et dolore</strong> magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <delete>ullamco</delete> laboris nisi ut <sub>subscript</sub>aliquip ex ea commodo consequat.</p>
+      <address>
+        Kalyn Daugherty <br />
+        346 Purple People Eater Ave <br />
+        Little Rock, AR 72176
+      </address>
+    </section>
+    <section id="table">
+      <!-- Use a table generator online to help with this. -->
+      <h2 class="section-heading">Table</h2>
+      <table border="1">
+        <!-- Only use the border when you are developing remember to take it out before being done. You do borders in CSS. -->
+        <caption>Grocery List</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quanity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>12</td>
+          <td>.50</td>
+        </tr>
+        <tr>
+          <td>Bread</td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Pickles</td>
+          <td>8</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </section>
+    <section id="lists">
+      <!-- Unordered lists, Ordered lists, definition list -->
+      <h2 class="section-heading">Lists</h2>
+      <!--dont use any spaces in class or id -->
+      <h3> Unordered List </h3>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+        <!-- you can reverse the order of your lists with "reverse" can also be done in CSS -->
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ol>
+      <h3>Definition List</h3>
+      <dl>
+        <dt>Definition Term</dt>
+        <dd>Definition Description</dd>
+        <dd>Definition Description</dd>
+      </dl>
+      <h3>Nested List</h3>
+      <!--Sub list to list items.-->
+      <ol start="5">
+        <!--The start attribute can tell you where to start in the list. -->
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <ul>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ol>
+    </section>
+    <section id="Hyperlink">
+      <h2 class="section-heading">Hyperlinks</h2>
+      <ul>
+        <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li> <!-- The target attribute can help you open your web browser where you need ie. New tab -->
+        <li><a href="folder/folder/file.html" title="Relative Link Example">Relative Link</a></li> <!-- Relative path to file system. title can help with accessibilities for when you hover over the title -->
+        <li><a href="#headings">Anchor Link</a></li> <!-- Helps jump around on documents and pages. Ie. FAQs on content pages. Use the ID attribute. Go for use on bringing a user back to the top of the page.-->
+        <li><a href="mailto:emal@address.com">Email Link</a></li> <!-- Dont use. bad practice. can cause virus. Use form instead. Exposes Email address to bots-->
+      </ul>
+    </section>
+    <section id="quotes">
+      <h2 class="section-heading">Quotes</h2>
+      <h3>Block Quote</h3>
+      <blockquote>It's never too late to be what you might've been.<cite> -George Eliot</cite></blockquote>
+      <h3>Inline Quote</h3>
+      <p><q>Honey tastes good!</q> said Pooh.</p>
+
+    </section>
+    <section id="images">
+      <h2 class="section-heading">Images</section>
+      <!-- 2 attributes that are required for images is source (src) and alt (reads to user) -->
+      <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo"/>
+      <section id="structural-elements">
+        <h2 class="section-heading">Structural Elements</h2>
+          <code>&lt;div&gt;</code>
+          <code>&lt;span&gt;</code>
+          <code>&lt;main&gt;</code>
+          <code>&lt;section&gt;</code>
+          <code>&lt;nav&gt;</code>
+          <code>&lt;article&gt;</code>
+          <code>&lt;header&gt;</code>
+          <code>&lt;footer&gt;</code>
+          <code>&lt;figure&gt;</code>
+          <code>&lt;figcaption&gt;</code>
+      </section>
+</body>
+
+</html>
