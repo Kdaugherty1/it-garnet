@@ -1,51 +1,45 @@
-
-html {
-  box-sizing: border-box;
-}
-
-.formlabel {
+label {
   display: inline-block;
-  width: 150px;
-  text-align: right;
-  padding: 5px;
   font-weight: bold;
+  text-align: right;
 }
 
 .error {
   color: red;
-  padding-left: 5px;
+  padding-left: 2px;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: times new roman;
 }
 
 main {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 300px;
 }
-
-.formlabel {
-  display: flex;
-  justify-content: flex-;
-  flex-wrap: nowrap;
-  margin-bottom: 5px;
-  font-weight: bold;
+.personal, .contact, .meds {
+  padding-left: 200px;
+  padding-right: 300px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: solid gray;
 }
-
+.submit {
+  padding-top: 20px;
+}
 input[type="text"],
 select {
   width: 100%;
-  padding: 4px;
-  margin-bottom: 10px;
+  padding: 3px;
+  margin-bottom: 4px;
   box-sizing: border-box;
 }
 
 input[type="radio"] {
   margin-right: 5px;
+  padding: 5px;
+  padding bottom: px; 
 }
 
 .error {
