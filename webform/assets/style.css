@@ -39,7 +39,7 @@ main {
 input[type="text"],
 select {
   width: 100%;
-  padding: 8px;
+  padding: 4px;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
