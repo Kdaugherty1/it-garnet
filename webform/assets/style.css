@@ -1,4 +1,4 @@
-/*
+*
 html {
   box-sizing: border-box;
 }
@@ -23,7 +23,6 @@ html {
 }
 */
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -33,7 +32,11 @@ body {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
+}
+
+.primary h1 {
+  color: black;
 }
 
 .formlabel {
