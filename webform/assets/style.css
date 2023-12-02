@@ -39,7 +39,7 @@ select {
 input[type="radio"] {
   margin-right: 5px;
   padding: 5px;
-  padding bottom: px; 
+  padding bottom: 2px; 
 }
 
 .error {
