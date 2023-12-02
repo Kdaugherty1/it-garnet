@@ -1,11 +1,12 @@
+/*
+html {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 .formlabel {
@@ -20,6 +21,8 @@ html {
   color: red;
   padding-left: 5px;
 }
+*/
+
 
 body {
   font-family: Arial, sans-serif;
