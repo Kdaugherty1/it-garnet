@@ -3,10 +3,10 @@ label {
   font-weight: bold;
   text-align: right;
 }
-
 .error {
   color: red;
-  padding-left: 2px;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 body {
