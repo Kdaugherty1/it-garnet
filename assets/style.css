@@ -18,6 +18,9 @@ h1 {
   font-size: 75px;
   font-weight: bold;
 }
+nav {
+  background: white;
+}
 nav ul{
   list-style-type:none;
   margin:0;
