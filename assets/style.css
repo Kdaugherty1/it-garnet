@@ -12,6 +12,13 @@ h1 {
   margin:40px auto 40px auto;
   padding: 20px;
 }
+nav ul{
+  list-style-type:none;
+  margin:0;
+}
+nav ul li{
+  margin-bottom:10px;
+}
 #footer {
   position: absolute;
   bottom: 0;
