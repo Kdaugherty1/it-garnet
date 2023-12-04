@@ -14,19 +14,12 @@ h1 {
   padding: 20px;
   text-shadow:4px 4px white;
 }
-.assignments {
+nav {
   font-size: 75px;
   font-weight: bold;
   text-align: left;
 }
-nav {
-color: white;
-  text-align: left:
-}
-nav ul{
-  list-style-type:none;
-  margin:0;
-}
+
 nav ul li{
   margin-bottom:10px;
   font-size: 40px;
