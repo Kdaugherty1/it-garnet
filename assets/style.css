@@ -23,6 +23,9 @@ nav ul li{
   font-weight: bold;
   margin-bottom:10px;
 }
+a {
+  text-decoration: none;
+}
 #footer {
   font-size: 10px;
   position: absolute;
