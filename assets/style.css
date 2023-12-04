@@ -15,14 +15,13 @@ h1 {
   text-shadow:4px 4px white;
 }
 nav {
-  font-size: 75px;
-  font-weight: bold;
   text-align: left;
 }
 
 nav ul li{
+  font-size: 75px;
+  font-weight: bold;
   margin-bottom:10px;
-  font-size: 40px;
 }
 #footer {
   position: absolute;
