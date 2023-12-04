@@ -1,4 +1,22 @@
+html {
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 main {
+  margin: auto;
+}
+body {
   background-image: url("../assets/img/pinkmountians.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +58,7 @@ a:hover {
   color: green;
 }
 
-#footer {
+footer {
   font-size: 20px;
   position: sticky;
   background-color: white;
