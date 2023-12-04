@@ -3,7 +3,11 @@ main {
   min-height: 100vh;
   background-image: url("../assets/img/pinkmountians.jpg");
   background-repeat: no-repeat;
-  background-size: inherit;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
 }
 h1 {
   font-family: georgia;
