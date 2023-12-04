@@ -21,9 +21,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display:flex;
-  flex-direction:row;
-  justify-content:flex-start;
 }
 h1 {
   font-family: georgia;
