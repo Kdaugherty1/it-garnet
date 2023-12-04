@@ -73,7 +73,7 @@ h2.section-heading + h3.section-heading {
 }
 footer{
   text-align: center;
-  text-size: 20px;
+  font-size: 20px;
 }
 /**
    * prism.js default theme for JavaScript, CSS and HTML
