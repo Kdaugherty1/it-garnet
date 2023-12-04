@@ -16,6 +16,7 @@ h1 {
 }
 nav {
   text-align: left;
+  list-style-type: none
 }
 
 nav ul li{
