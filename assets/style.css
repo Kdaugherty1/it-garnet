@@ -1,6 +1,4 @@
 body {
-display: flex;
-  flex-direction: column;
   background-image: url("../assets/img/pinkmountians.jpg");
   background-repeat: no-repeat;
   text-align: center;
