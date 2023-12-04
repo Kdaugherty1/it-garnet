@@ -1,0 +1,77 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  background:#e2e0d4;
+  padding:30px;
+}
+
+label, input {
+  display:block;
+}
+
+header h1{
+  text-align:center;
+  font-size: 100px;
+  font-family: georgia;
+  
+}
+
+section[id]{
+  border:10px solid #cebeb9;
+  background: #e8e8e8;
+  border-radius:12px;
+  margin:40px auto;
+  padding:20px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+h2.section-heading{
+   border-bottom:2px solid #c0c0c0;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.section-heading{
+  flex: 0 0 100%;
+}
+
+h3.section-heading{
+  border-top:2px solid #c0c0c0;
+  padding-top:20px;
+}
+
+h2.section-heading + h3.section-heading {
+  border:none;
+  padding-top:0;
+}
+
+.output{
+  flex: 1 30%;
+  padding-right:40px;
+  margin-bottom:40px;
+}
+.markup{
+  flex: 1 70%;
+  background-color: #ACD1AF;
+  padding:10px;
+  margin-bottom:40px;
+  overflow:auto;
+  border: 5px solid #cebeb9;
+}
+footer{
+  text-align: center;
+  text-size: 20px;
+}
