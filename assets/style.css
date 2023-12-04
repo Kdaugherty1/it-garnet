@@ -8,13 +8,15 @@ main {
 }
 h1 {
   font-family: georgia;
+  font-style: italic;
   font-size: 100px;
   margin:40px auto 40px auto;
   padding: 20px;
   text-shadow:4px 4px white;
 }
 .assignments h2 {
-  font-size: 50px;
+  font-size: 75px;
+  font-weight: bold;
 }
 nav ul{
   list-style-type:none;
