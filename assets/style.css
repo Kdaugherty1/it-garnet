@@ -4,19 +4,20 @@ main {
   background-image: url("../assets/img/pinkmountians.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  text-align: center;
 }
 h1 {
   font-family: georgia;
   font-style: italic;
   font-size: 100px;
+  text-align: center;
   margin:40px auto 40px auto;
   padding: 20px;
   text-shadow:4px 4px white;
 }
-.assignments h2 {
+.assignments {
   font-size: 75px;
   font-weight: bold;
+  text-align: left;
 }
 nav {
   background: white;
