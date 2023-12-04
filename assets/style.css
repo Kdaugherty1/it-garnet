@@ -1,7 +1,7 @@
 main {
   position: relative;
   min-height: 100vh;
-  background-image: url("../assets/img/pinkmountians.jpg");
+  background-image: url("../assets/img/pinkmountians.jpg" width='200' height='150');
   background-repeat: no-repeat;
   background-size: auto;
 }
