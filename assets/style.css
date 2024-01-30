@@ -35,7 +35,14 @@ h1 {
   text-shadow:4px 4px white;
 }
 nav {
-  text-align: left;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    height:40px;
+}
 }
 nav ul li{
   list-style-type: none;
