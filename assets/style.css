@@ -61,5 +61,6 @@ a:hover {
 footer {
   font-size: 20px;
   text-align: center;
-  float: bottom;
+  position: absolute;
+  bottom: 0;
 }
