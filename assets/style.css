@@ -25,14 +25,20 @@ body {
   background-size: cover;
   background-position: center;
 }
+.header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
 h1 {
   font-family: georgia;
   font-style: italic;
   font-size: 100px;
-  text-align: center;
-  margin:40px auto 40px auto;
-  padding: 20px;
   text-shadow:4px 4px white;
+  
 }
 .topnav {
   overflow: hidden;
