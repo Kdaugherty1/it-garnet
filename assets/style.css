@@ -45,7 +45,7 @@ h1 {
   background-color: none;
 }
 
-.topnav ul {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
