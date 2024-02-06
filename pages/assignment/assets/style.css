@@ -25,6 +25,15 @@ html {
     background-size: cover;
     background-position: center;
   }
+  header {
+    text-align: center;
+    font-size: 60px;
+    height: 170px;
+    text-decoration-line: underline;
+  }
+  li {
+    font-size: 50px;
+  }
   a {
     text-decoration: none;
   }
