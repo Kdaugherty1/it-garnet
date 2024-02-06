@@ -40,12 +40,12 @@ h1 {
   text-shadow:4px 4px white;
   
 }
-.topnav {
+nav.primary {
   overflow: hidden;
   background-color: none;
 }
 
-.topnav a {
+nav.primary a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -55,28 +55,15 @@ h1 {
   font-size: 23px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
+nav.primary a:active {
   color: black;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-a:link {
+nav.primary a:visited {
   color: black;
 }
 
-a:visited {
-  color: black;
-}
-
-a:hover {
+nav.primary a:hover {
   color: green;
 }
 
