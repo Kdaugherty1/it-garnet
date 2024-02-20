@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+ 
+  .container{
+    margin:auto;
+    padding:40px;
+  }
+
+  imag{
+    max-width:100%;
+    height:auto;
+  }
+  
