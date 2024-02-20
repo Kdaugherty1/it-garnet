@@ -5,50 +5,58 @@
     <meta name="description" content="Unit Conversion (AJAX)">
     <meta name="keywords" content="JavaScript, HTML, CSS">
     <meta name="author" content="Kalyn Daugherty">
-    <title>JavaScript Calculator</title>
+    <title>Unit Conversion (AJAX)</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 <form id="myform">
     <div class="formcontainer">
-        <h1></h1>
+        <h1>Unit Converter (AJAX)</h1>
         <fieldset id="detail">
             <legend>Unit Converter (AJAX)</legend>  
             <br>
             
-            <label class="formlabel" for="Operand1">From Value: </label>
-            <input type="text" id="Operand1" name="Operand1" size="15" maxlength="15"
+            <label class="formlabel" for="fromvalue">From Value: </label>
+            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"
                     data-rule-required="true"  data-msg-required="Value is Required" 
                     data-rule-number="true" data-msg-number="Value must be a Number">
-            <label for="Operand1" class="error" id="Operand1Msg"></label>
+            <label for="FromValue" class="error" id="FromValueMsg"></label>
             <br><br>
-
             <label class="formlabel">From Unit: </label>
-                <label for="centimeters">
-                    <input type="radio" name="Operator" id="centimeters" value = "cm"
-                           data-rule-required="true" data-msg-required="Operator is Required" />+
-                </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="SubtractOperator" value = "-">-
-                </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="MultiplyOperator" value = "*">*
-                </label>
-                <label for="AddOperator">
-                    <input type="radio" name="Operator" id="DivideOperator" value = "/">/
-                </label>
-            <label for="Operator" class="error" id="OperatorMsg"></label>
-            <br><br>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="centimeters" value = "1"
+                       data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Meters" value = "2">meters
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Kilometers" value = "3">kilometers
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Inches" value = "4">inches
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Feet" value = "5">feet
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Yards" value = "6">yards
+            </label>
+            <label for="FromUnit">
+                <input type="radio" name="FromUnit" id="Miles" value = "7">miles
+            </label>
+        <label for="FromUnit" class="error" id="FromUnitMsg"></label>
+        <br><br>
       
-            <label class="formlabel" for="Operand2">Operand 2: </label>
-            <input type="text" id="Operand2" name="Operand2" size="15" maxlength="15"
-                    data-rule-required="true"  data-msg-required="Operand 2 is Required" 
-                    data-rule-number="true" data-msg-number="Operand 2 must be a Number">
-            <label for="Operand2" class="error" id="Operand2Msg"></label>
+            <label class="formlabel" for="ToUnit">To Unit: </label>
+            <input type="text" id="ToUnit" name="ToUnit" size="15" maxlength="15"
+                    data-rule-required="true"  data-msg-required="To Unit is Required" 
+                    data-rule-number="true" data-msg-number="To Unit must be a Number">
+            <label for="ToUnit" class="error" id="ToUnitMsg"></label>
             <br><br>
 
-            <label class="formlabel">Result: </label>
-            <span id="Result"></span>
+            <label class="formlabel">To Value: </label>
+            <span id="tovalue"></span>
             <br><br>
 
             <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
