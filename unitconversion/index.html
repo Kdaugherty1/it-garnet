@@ -24,36 +24,55 @@
             <br><br>
             <label class="formlabel">From Unit: </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="centimeters" value = "1"
+                <input type="radio" name="centimeters" id="centimeters" value = "1"
                        data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
             </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Meters" value = "2">meters
+                <input type="radio" name="meters" id="Meters" value = "2">meters
             </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Kilometers" value = "3">kilometers
+                <input type="radio" name="kilometers" id="Kilometers" value = "3">kilometers
             </label>
             <label for="FromUnit">
                 <input type="radio" name="FromUnit" id="Inches" value = "4">inches
             </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Feet" value = "5">feet
+                <input type="radio" name="feet" id="Feet" value = "5">feet
             </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Yards" value = "6">yards
+                <input type="radio" name="yards" id="Yards" value = "6">yards
             </label>
             <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Miles" value = "7">miles
+                <input type="radio" name="miles" id="Miles" value = "7">miles
             </label>
         <label for="FromUnit" class="error" id="FromUnitMsg"></label>
         <br><br>
       
-            <label class="formlabel" for="ToUnit">To Unit: </label>
-            <input type="text" id="ToUnit" name="ToUnit" size="15" maxlength="15"
-                    data-rule-required="true"  data-msg-required="To Unit is Required" 
-                    data-rule-number="true" data-msg-number="To Unit must be a Number">
-            <label for="ToUnit" class="error" id="ToUnitMsg"></label>
-            <br><br>
+        <label class="formlabel">To Unit: </label>
+        <label for="ToUnit">
+            <input type="radio" name="centimeters" id="centimeters" value = "1"
+                   data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="meters" id="Meters" value = "2">meters
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="kilometers" id="Kilometers" value = "3">kilometers
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="inches" id="Inches" value = "4">inches
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="feet" id="Feet" value = "5">feet
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="yards" id="Yards" value = "6">yards
+        </label>
+        <label for="ToUnit">
+            <input type="radio" name="miles" id="Miles" value = "7">miles
+        </label>
+    <label for="ToUnit" class="error" id="ToUnitMsg"></label>
+    <br><br>
 
             <label class="formlabel">To Value: </label>
             <span id="tovalue"></span>
