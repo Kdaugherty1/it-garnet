@@ -26,15 +26,20 @@ image{
 }
 
 body {
-font-family: "Rubik", sans-serif;
-background-color:#FDFBEE;
+  font-family: "Rubik", sans-serif;
+  background-color:#FDFBEE;
+ 
 }
 main {
-padding: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 header.primary {
   background-image: url("../img/5.jpg");
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -49,6 +54,7 @@ width: 100%;
 
 nav li {
 list-style-type: none;
+display: inline-block;
 text-align: center;
 }
 
@@ -58,7 +64,7 @@ font-family: georgia;
 font-style: italic;
 font-size: 60px;
 text-align: center;
-margin: 60px;
+margin: 50px;
 padding: 20px
 font-color: #5C5B3C;
 }
