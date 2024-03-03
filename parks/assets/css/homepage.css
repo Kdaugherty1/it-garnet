@@ -28,24 +28,35 @@ image{
 body {
   font-family: "Rubik", sans-serif;
   background-color:#FDFBEE;
- 
 }
 main {
-  padding: 20px;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  box-sizing: border-box;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20%;
+   border:10px solid#FDB728;
+   border-radius:4px;
+   flex: 1 70%;
+  background-color:#FDFBEE;
+  padding:10px;
+  margin-bottom:40px;
+  overflow:auto;
 }
 header.primary {
   background-image: url("../img/5.jpg");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  text-align:center;
 }
 #topnav ul {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 position:absolute;
 top:0;
 background-color: #027F60;
@@ -89,7 +100,19 @@ color: black;
 nav.primary a:hover {
 color: green;
 }
-
+nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom:5px;
+  font-size: 17px;
+}
+#content {
+  padding: 20px;
+  font-size: 19px;
+}
 #aside{
   background: FFFFED;
 }
@@ -97,6 +120,7 @@ aside .container{
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  font-size: 18px;
 }
 aside .widget:first-of-type{
   border-right:1px dotted #c0c0c0;
@@ -105,6 +129,7 @@ aside .widget:first-of-type{
 #aside.container{
   background-color: #FFFFED
 }
+
 #colophon{
 text-align: center;
 background-color: #027F60;
