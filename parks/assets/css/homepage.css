@@ -32,8 +32,11 @@ background-color:#FDFBEE;
 main {
 padding: 20px;
 }
-header {
-  background-image: url("img/5.jpg")
+header.primary {
+  background-image: url("../img/cover.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #topnav ul {
 display: grid;
