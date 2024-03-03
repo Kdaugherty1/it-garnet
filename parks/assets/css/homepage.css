@@ -32,7 +32,9 @@ background-color:#FDFBEE;
 main {
 padding: 20px;
 }
-
+header {
+  background-image: url("img/5.jpg")
+}
 #topnav ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
