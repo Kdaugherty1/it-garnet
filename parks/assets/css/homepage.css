@@ -33,7 +33,7 @@ main {
 padding: 20px;
 }
 header.primary {
-  background-image: url("../img/cover.jpg");
+  background-image: url("../img/5.jpg");
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ color: black;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
-font-size: 23px;
+font-size: 20px;
 color: #FDB728;
 }
 
