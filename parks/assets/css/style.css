@@ -25,7 +25,7 @@ image{
   height:auto;
 }
 
-body {
+body.primary {
   font-family: "Rubik", sans-serif;
   background-color:#FDFBEE;
 }
@@ -54,6 +54,7 @@ header.primary {
 header {
   text-align:center;
 }
+
 #topnav ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -66,9 +67,12 @@ width: 100%;
 nav li {
 list-style-type: none;
 display: inline-block;
-text-align: center;
+text-align: left;
 }
-
+nav input {
+  text-align: left;
+  border-radius: 25px;
+}
 h1 {
 color: #5C5B3C;
 font-family: georgia;
@@ -81,7 +85,6 @@ font-color: #5C5B3C;
 }
 nav a {
 display: block;
-color: black;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
@@ -135,4 +138,7 @@ text-align: center;
 background-color: #027F60;
 padding: 40px;
 color: #FDB728;
+}
+.listing--info {
+  text-align: left;
 }
