@@ -81,7 +81,7 @@ font-size: 60px;
 text-align: center;
 margin: 50px;
 padding: 20px
-font-color: #5C5B3C;
+color: #5C5B3C;
 }
 nav a {
 display: block;
@@ -132,7 +132,25 @@ aside .widget:first-of-type{
 #aside.container{
   background-color: #FFFFED
 }
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
 
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
 #colophon{
 text-align: center;
 background-color: #027F60;
