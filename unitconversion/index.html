@@ -1,92 +1,65 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!doctype html>
+
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Unit Conversion (AJAX)">
-    <meta name="keywords" content="JavaScript, HTML, CSS">
-    <meta name="author" content="Kalyn Daugherty">
-    <title>Unit Conversion (AJAX)</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+  <meta charset="utf-8">
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Unit Conversion (AJAX)">
+  <meta name="keywords" content="JavaScript, HTML, CSS">
+  <meta name="author" content="Kalyn Daugherty">
+  <title>Unit Conversion (AJAX)</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+  <script src="assets/scripts/calculator.js"></script>
+
 </head>
+
 <body>
-<form id="myform">
-    <div class="formcontainer">
-        <h1>Unit Converter (AJAX)</h1>
-        <fieldset id="detail">
-            <legend>Unit Converter (AJAX)</legend>  
-            <br>
-            
-            <label class="formlabel" for="fromvalue">From Value: </label>
-            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"
-                    data-rule-required="true"  data-msg-required="Value is Required" 
-                    data-rule-number="true" data-msg-number="Value must be a Number">
-            <label for="FromValue" class="error" id="FromValueMsg"></label>
-            <br><br>
-            <label class="formlabel">From Unit: </label>
-            <label for="FromUnit">
-                <input type="radio" name="centimeters" id="centimeters" value = "1"
-                       data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="meters" id="Meters" value = "2">meters
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="kilometers" id="Kilometers" value = "3">kilometers
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="FromUnit" id="Inches" value = "4">inches
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="feet" id="Feet" value = "5">feet
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="yards" id="Yards" value = "6">yards
-            </label>
-            <label for="FromUnit">
-                <input type="radio" name="miles" id="Miles" value = "7">miles
-            </label>
-        <label for="FromUnit" class="error" id="FromUnitMsg"></label>
-        <br><br>
-      
-        <label class="formlabel">To Unit: </label>
-        <label for="ToUnit">
-            <input type="radio" name="centimeters" id="centimeters" value = "1"
-                   data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="meters" id="Meters" value = "2">meters
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="kilometers" id="Kilometers" value = "3">kilometers
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="inches" id="Inches" value = "4">inches
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="feet" id="Feet" value = "5">feet
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="yards" id="Yards" value = "6">yards
-        </label>
-        <label for="ToUnit">
-            <input type="radio" name="miles" id="Miles" value = "7">miles
-        </label>
-    <label for="ToUnit" class="error" id="ToUnitMsg"></label>
-    <br><br>
 
-            <label class="formlabel">To Value: </label>
-            <span id="tovalue"></span>
-            <br><br>
+  <div id="container">
 
-            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
-            <input type="button" value="Clear" name="Clear" onclick="clearform();">
-
-        </fieldset>
+    <div id="header">
+      <h1>Unit Converter (AJAX)</h1>
     </div>
-</form>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-<script src="assets/scripts/calculator.js"></script>
+    <div id="calc">
+      <H4>Unit Converter (AJAX)</H4>
+      <form id="myForm" onsubmit="return false">
+        <label class="formFields formLabels" for="FromValue">From Value:<input type="text" id="FromValue" name="FromValue" value=""></label>
+        <br>
+        <label class="formLabels">From Unit:</label>
+        <label for="fromCentimeters"><input type="radio" class="radioSelect" id="fromCentimeters" name="FromUnits" value="cm">centimeters</label>
+        <label for="fromMeters"><input type="radio" class="radioSelect" id="fromMeters" name="FromUnits" value="m">meters</label>
+        <label for="fromKilometers"><input type="radio" class="radioSelect" id="fromKilometers" name="FromUnits" value="km">kilometers</label>
+        <label for="frominches"><input type="radio" class="radioSelect" id="frominches" name="FromUnits" value="in">inches</label>
+        <label for="fromFeet"><input type="radio" class="radioSelect" id="fromFeet" name="FromUnits" value="ft">feet</label>
+        <label for="fromYards"><input type="radio" class="radioSelect" id="fromYards" name="FromUnits" value="yd">yards</label>
+        <label for="fromMile"><input type="radio" class="radioSelect" id="fromMiles" name="FromUnits" value="mi">miles</label>
+        <label for="FromUnits" class="error"></label>
+        <br>
+        <label class="formLabels">To Unit:</label>
+        <label for="toCentimeters"><input type="radio" class="radioSelect" id="toCentimeters" name="ToUnits" value="cm">centimeters</label>
+        <label for="toMeters"><input type="radio" class="radioSelect" id="toMeters" name="ToUnits" value="m">meters</label>
+        <label for="toKilometers"><input type="radio" class="radioSelect" id="toKilometers" name="ToUnits" value="km">kilometers</label>
+        <label for="toInches"><input type="radio" class="radioSelect" id="toInches" name="ToUnits" value="in">inches</label>
+        <label for="toFeet"><input type="radio" class="radioSelect" id="toFeet" name="ToUnits" value="ft">feet</label>
+        <label for="toYards"><input type="radio" class="radioSelect" id="toYards" name="ToUnits" value="yd">yards</label>
+        <label for="toMile"><input type="radio" class="radioSelect" id="toMiles" name="ToUnits" value="mi">miles</label>
+        <label for="ToUnits" class="error"></label>
+        <br>
+        <h3 class="formFields formLabels">To Value: <span id="ToValue"></span></h3>
+        <br>
+        <input id="calcButton" type="submit" value="Calculate" name="calcButton" onclick="calculate()">
+        <input type="submit" value="Clear" name="clearButton" onclick="clearform()">
+
+      </form>
+    </div>
+
+  </div>
+
 </body>
+
 </html>
