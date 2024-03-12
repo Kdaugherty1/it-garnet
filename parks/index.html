@@ -15,11 +15,20 @@
   <header role="banner" class="primary">
   <section class="nav" role="main-navigation">
   <nav id="topnav">
+    <div class="logo">
+      <img src="assets/img/arkansas-logo.png" alt="Arkansas State Park Logo">
+  </div>
  <ul>
    <li><a href="index.html">Home</a></li>
    <li><a href="camping.html">Camping/Lodging</a></li>
    <li><a href="faq.html">FAQS</a></li>
-   <input type="text" placeholder="Search..">
+   <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button type="submit">Search</button>
+</form>
+
+<div id="searchResults"></div>
+
     </ul> 
     </nav>
   </section>
@@ -55,27 +64,28 @@
         <p>Get information on the more than 20 miles of hiking trails in Arkansas that will lead you through Petit Jean's natural and historic resources. Walk to the spectacular 95 foot Cedar Falls, one of the most spectacular waterfalls in Arkansas, meander through ancient geology on the Seven Hollows Trail, or enter Rock House Cave and view ancient pictographs.</p>
         <h2>Overlooks</h2>
         <p>Rising 1,120 feet above the Arkansas River Valley, Petit Jean Mountain offers sweeping views and many overlooks from which to enjoy them.</p>
-         <p>The Cedar Falls Overlook is a vantage point high above <em>95-foot</em> Cedar Falls, one of the most photographed waterfalls in Arkansas. A barrier-free walkway with wayside exhibits leads down to this overlook.<a href="https://www.arkansasstateparks.com/parks/petit-jean-state-park/trails-waterfalls-overlooks">Read More &raquo;</a></p> 
+         <p>The Cedar Falls Overlook is a vantage point high above 95-foot Cedar Falls, one of the most photographed waterfalls in Arkansas. A barrier-free walkway with wayside exhibits leads down to this overlook.<a href="https://www.arkansasstateparks.com/parks/petit-jean-state-park/trails-waterfalls-overlooks">Read More &raquo;</a></p> 
       </article>
     </div>
   </aside>
 </main>
-  <footer id="colophon" role="contentinfo">
-    <div class="listing--info cell large-4">
-                        <div class="listing--address">
-      <div class="listing--address--line1">1285 Petit Jean Mountain Road</div>
-      <div class="listing--address--line2"></div>
-    <div class="listing--address--city-state-zip">Morrilton, AR 72110</div>
+<footer>
+<div class="footer-content">
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Petit Jean State Park</strong></p>
+        <p>1285 Petit Jean Mountain Rd,</p>
+        <p>Morrilton, AR 72110, USA</p>
+        <p>Phone: +1 (501) 727-5441</p>
+        <p>Email: info@petitjeanstatepark.com</p>
+    </div>
+    <div class="map-container">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.575163897788!2d-92.93645018480111!3d35.11567378033024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c126cb44b7a731%3A0x57c44d7d579dc95a!2sPetit%20Jean%20Mountain%20State%20Park!5e0!3m2!1sen!2suk!4v1647033101355!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 </div>
-                        <div class="listing--directions-map-wrapper">
-  <div class="listing--directions">
-    <a class="partner-referral mobile-link" data-action="outbound_full--latlon" target="_blank" href="https://www.google.com/maps/dir/Current+Location/Petit+Jean+State+Park,+1285+Petit+Jean+Mountain+Road,+Morrilton,+72110,+AR">Get Directions</a>
-    <a class="partner-referral desktop-link" data-action="outbound_full--latlon" target="_blank" href="https://www.google.com/maps/dir//Petit+Jean+State+Park,+1285+Petit+Jean+Mountain+Road,+Morrilton,+72110,+AR">Get Directions</a>
-  </div>
-  <div class="listing--view-map"><a class="partner-referral" data-action="outbound_full--map" target="_blank" href="https://maps.google.com/maps/search/?api=1&query=Petit+Jean+State+Park,+1285+Petit+Jean+Mountain+Road,+Morrilton,+72110,+AR">View Map</a></div>
-</div>
-    <h6>&copy; 2024 Kalyn Daugherty</h6>
-  </footer>
+<h6>&copy; 2024 Kalyn Daugherty</h6>
+</footer>
 </body>
 
 </html>
