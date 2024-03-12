@@ -6,6 +6,7 @@
 #FDB728 yellow
 #FFFFFF white
 */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
 html {
   box-sizing: border-box;
   box-sizing: inherit;
@@ -20,25 +21,9 @@ image{
   height:auto;
 }
 
-body.primary {
+.primary {
   font-family: "Rubik", sans-serif;
   background-color:#FDFBEE;
-}
-main {
-  box-sizing: border-box;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -20%;
-   border:10px solid#FDB728;
-   border-radius:4px;
-   flex: 1 70%;
-  background-color:#FDFBEE;
-  padding:10px;
-  margin-bottom:40px;
-  overflow:auto;
-}
-header.primary {
   background-image: url("../img/5.jpg");
   height: 100vh;
   background-size: cover;
@@ -46,10 +31,41 @@ header.primary {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#wrapper {
+  box-sizing: border-box;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20%;
+   border:10px solid#FDB728;
+   border-radius:4px;
+  background-color:#FDFBEE;
+  padding:10px;
+  margin-bottom:40px;
+}
+#wrapper-camping{
+  box-sizing: border-box;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  border:10px solid#FDB728;
+   border-radius:4px;
+   background-color:#FDFBEE;
+  padding:10px;
+}
+#wrapper-faq{
+  box-sizing: border-box;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  border:10px solid#FDB728;
+   border-radius:4px;
+   background-color:#FDFBEE;
+  padding:10px;
+}
 header {
   text-align:center;
 }
-
 #topnav ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -115,7 +131,7 @@ nav input[type=text] {
   text-align:center;
 }
 #aside{
-  background: FFFFED;
+  background: #FFFFED;
 }
 aside .container{
   display:grid;
@@ -149,6 +165,7 @@ aside .widget:first-of-type{
 {
     color:black;
 }
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -167,18 +184,52 @@ aside .widget:first-of-type{
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
+input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+h4{
+  background:#027F60;
+  color:white;
+  padding:1em;
+  position: relative;
+}
+label::before{
+  content:"";
+  display: inline-block;
+  border: 15px solid transparent;
+  border-left:20px solid white;
+}
+label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+div.p{
+  max-height:0px;
   overflow: hidden;
+  transition:max-height 0.5s;
+  background-color: white;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-#colophon{
-text-align: center;
-background-color: #027F60;
-padding: 40px;
-color: #FDB728;
+div.p p {
+  padding:2em;
 }
-.listing--info {
-  text-align: left;
+input:checked ~ h1 label::before{
+  border-left:15px solid transparent;
+  border-top:20px solid white;
+  margin-top:12px;
+  margin-right:10px;
+}
+input:checked ~ h1 ~ div.p{
+  max-height:100px;
+}
+a{
+  color:steelblue;
 }

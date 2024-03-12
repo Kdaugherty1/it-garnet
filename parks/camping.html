@@ -4,41 +4,57 @@
 <head>
   <title>Arkansas State Park: Petit Jean State Park</title>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Petit Jean State Park Homepage" />
   <meta name="author" content="Kalyn Daugherty" />
   <meta name="robots" content="noindex">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js"></script>
 </head>
 
-<body class="primary">
-  <header role="banner" class="camping">
-  <section class="nav" role="main-navigation">
-  <nav id="topnav">
- <ul>
-   <li><a href="index.html">Home</a></li>
-   <li><a href="camping.html">Camping/Lodging</a></li>
-   <li><a href="faq.html">FAQS</a></li>
-   <input type="text" placeholder="Search..">
-    </ul> 
-    </nav>
-  </section>
-  </header>
-  <main>
-    <h1>PETIT JEAN CAMPING AND LODGING</h1>
-    <div class="fade container">
+<body class="camping">
+  
+    <header role="banner" class="camping">
+        <h1>Petit Jean State Park</h1>
+        <h2>Camping & Lodging Information</h2>
+        <section class="nav" role="main-navigation">
+          <nav id="topnav">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="camping.html">Camping/Lodging</a></li>
+           <li><a href="faq.html">FAQS</a></li>
+           <input type="text" placeholder="Search..">
+            </ul> 
+            </nav>
+          </section>
+    </header>
+    <main id="wrapper-camping">
+   <!-- <div class="fade container">
         <div><img src="assets/img/cabins1.jpg" alt="cabins"></div>
         <div><img src="assets/img/cabins2.jpg" alt="cabins"></div>
         <div><img src="assets/img/tent1.jpg" alt="tent-camping"></div>
         <div><img src="assets/img/tent2.jpg" alt="tent-camping"></div>
         <div><img src="assets/img/lodge2.jpg" alt="lodge"></div>
-      </div>
-  </main>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>       
-<script src="assets/js/script.js"></script>
-  <<footer id="colophon" role="contentinfo">
+      </div> 
+    -->
+    <div class="container">
+        <div class="camping-info">
+            <h2>Camping</h2>
+            <p>Petit Jean State Park offers a variety of camping options including tent camping, RV camping, and group camping. Enjoy the natural beauty of the park while staying overnight under the stars.</p>
+            <p>Facilities include restrooms, showers, picnic areas, and fire pits.</p>
+            <p>Reservations are recommended, especially during peak seasons.</p>
+        </div>
+
+        <div class="lodging-info">
+            <h2>Lodging</h2>
+            <p>If camping isn't your style, Petit Jean State Park also offers cozy lodging options. Choose from cabins, cottages, or lodge rooms.</p>
+            <p>Enjoy modern amenities while being surrounded by the park's stunning landscapes.</p>
+            <p>Reservations for lodging can be made in advance.</p>
+        </div>
+    </div>
+    </main>
+<footer id="colophon" role="contentinfo">
     <div class="listing--info cell large-4">
                         <div class="listing--address">
       <div class="listing--address--line1">1285 Petit Jean Mountain Road</div>
@@ -54,5 +70,5 @@
 </div>
     <h6>&copy; 2024 Kalyn Daugherty</h6>
   </footer>
-  </body>
-  </html>
+</body>
+</html>
