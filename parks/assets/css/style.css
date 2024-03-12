@@ -52,6 +52,7 @@ image{
    border-radius:4px;
    background-color:#FDFBEE;
   padding:10px;
+  margin-bottom: 30px;
 }
 #wrapper-faq{
   box-sizing: border-box;
@@ -62,9 +63,11 @@ image{
    border-radius:4px;
    background-color:#FDFBEE;
   padding:10px;
+  margin-bottom: 30px;
 }
 header {
   text-align:center;
+  padding:30px;
 }
 #topnav {
   /*position: absolute;
@@ -75,12 +78,9 @@ header {
     grid-template-columns: auto;
     justify-content: start;
     background-color: #027F60;
-  
+    width: 100%;
 }
-.logo img {
-  height: 50px; /* Adjust the height of the logo as needed */
-  margin-right: 20px; /* Adjust the margin as needed */
-}
+
 #topnav ul {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -240,29 +240,22 @@ footer {
   bottom: 0;
   width: 100%
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-info {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.map-container {
-  flex: 1;
-}
-
-.map-container iframe {
-  width: 50%;
-  height: 200px;
-}
-h6 {
+.contact-info,
+.map-container,
+.logo {
   text-align: center;
+}
+
+h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #searchForm {
   display: flex;
