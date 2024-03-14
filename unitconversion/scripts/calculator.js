@@ -53,7 +53,6 @@ function calculate() {
             toUnits = document.getElementById("toMiles").value;
         }
 
-        var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
         var myMethod = "POST";
 
         var myData = {};
