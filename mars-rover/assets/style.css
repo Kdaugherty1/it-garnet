@@ -1,0 +1,28 @@
+table {
+    margin-top: 30px;
+  }
+  table, th, td {
+    border: 1px solid;
+  }
+  #rover-selection {
+     margin-top: 50px;
+      margin-bottom: 20px;
+  }
+  
+  #date-selection {
+      margin-bottom: 20px;
+  }
+  
+  #error-msg {
+      color: red;
+  }
+  
+  .thumbnail {
+      margin: 10px;
+  }
+  
+  .thumbnail img {
+      width: 70px;
+      height: auto;
+  }
+  

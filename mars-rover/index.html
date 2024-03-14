@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Kalyn Daugherty">
+  <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Rover Photo Explorer</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Mars Rover Photo Explorer</h1>
+    <table id="rover-dates">
+      <tr>
+        <th>Rover</th>
+        <th>Mission Start</th>
+        <th>Mission End</th>
+      </tr>
+      <tr>
+        <td>Curiosity</td>
+        <td>08/06/2012</td>
+        <td>09/28/2019</td>
+      </tr>
+      <tr>
+        <td>Opportunity</td>
+        <td>01/26/2004</td>
+        <td>06/11/2018</td>
+      </tr>
+      <tr>
+        <td>Spirit</td>
+        <td>01/05/2004</td>
+        <td>03/21/2004</td>
+      </tr>
+    </table>
+    <div id="rover-selection">
+      <h2>Select a rover and a picture date:</h2>
+      <h3>Rover:</h3>
+      <input type="radio" name="rover" value="curiosity" id="curiosity">
+      <label for="curiosity">Curiosity</label>
+      <input type="radio" name="rover" value="opportunity" id="opportunity">
+      <label for="opportunity">Opportunity</label>
+      <input type="radio" name="rover" value="spirit" id="spirit">
+      <label for="spirit">Spirit</label>
+    </div>
+    <div id="date-selection">
+      <label for="date">Picture Date:</label>
+      <input type="date" id="date">
+    </div>
+    <button id="search-btn">Search</button>
+    <button id="clear-btn">Clear</button>
+    <p id="error-msg"></p>
+    <div id="photo-results"></div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
