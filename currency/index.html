@@ -1,22 +1,58 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-
-  <meta charset="UTF-8">
-  <meta name="description" content="Unit Conversion (AJAX)">
-  <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <meta name="author" content="Kalyn Daugherty">
-  <title>Unit Conversion (AJAX)</title>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
-  <script src="=assets/script.js"></script>
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Value History</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-
-</body>
+<div class="container">
+        <h1>Currency Value History</h1>
+        <form id="currency-form">
+            <div class="form-group">
+                <label for="from-currency">From Currency:</label>
+                <select id="from-currency" name="from-currency" required>
+                  <option value="">Select an Currency</option>
+                  <option value="USD">US Dollar (USD)</option>
+                  <option value="JPY">Japanese YEN (JPY)</option>
+                  <option value="MXN">Mexican Peso (MXN)</option>
+                  <option value="PKR">Pakistan Rupee (PKR)</option>
+                  <option value="EUR">Euro Dollar (USD)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to-currency">To Currency:</label>
+                <select id="to-currency" name="to-currency" required>
+                   <option value="">Select an Currency</option>
+                  <option value="USD">US Dollar (USD)</option>
+                  <option value="JPY">Japanese YEN (JPY)</option>
+                  <option value="MXN">Mexican Peso (MXN)</option>
+                  <option value="PKR">Pakistan Rupee (PKR)</option>
+                  <option value="EUR">Euro Dollar (USD)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="from-date">From Date:</label>
+                <input type="date" id="from-date" name="from-date" required>
+            </div>
+            <div class="form-group">
+                <label for="to-date">To Date:</label>
+                <input type="date" id="to-date" name="to-date" required>
+            </div>
+            <div class="form-group">
+                <button type="button" id="submit-btn">Submit</button>
+                <button type="button" id="clear-btn">Clear</button>
+            </div>
+        </form>
+        <div class="error-message" id="error-message"></div>
+        <div class="chart-container">
+            <canvas id="currency-chart"></canvas>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
