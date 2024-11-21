@@ -12,50 +12,101 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 <body>
-<form id="myform">
+  <form id="calculator">
     <div class="formcontainer" onsubmit="return false">
-        <h1>JavaScript Calculator</h1>
-        <fieldset id="detail">
-            <legend>Calculator</legend>  
-            <br>
-            
-            <label class="m_formlabel" for="m_Operand1">Operand 1: </label>
-          <input type="text" id="m_Operand1" name="Operand1" size="15" maxlength="15">
-          <label class="m_error" for="m_Operand1" id="m_Operand1Error"></label>
-          <br><br>
+      <h1>JavaScript Calculator</h1>
+      <fieldset id="detail">
+        <legend>Calculator</legend>
+        <br >
 
-          <label class="m_formlabel">Operator: </label>
-          <label for="m_AddOperator">
-            <input type="radio" name="Operator" id="m_AddOperator" value="Add">+
-          </label>
-          <label for="m_SubtractOperator">
-            <input type="radio" name="Operator" id="m_SubtractOperator" value="Subtract">-
-          </label>
-          <label for="m_MultiplyOperator">
-            <input type="radio" name="Operator" id="m_MultiplyOperator" value="Multiply">*
-          </label>
-          <label for="m_DivideOperator">
-            <input type="radio" name="Operator" id="m_DivideOperator" value="Divide">/
-          </label>
-          <label for="m_Operator" class="m_error" id="m_OperatorError"></label>
-          <br><br>
+        <label class="formlabel" for="Operand1">Operand 1: </label>
+        <input
+          type="text"
+          id="Operand1"
+          name="Operand1"
+          size="15"
+          maxlength="15"
+          data-rule-required="true"
+          data-msg-required="Operand 1 is Required"
+          data-rule-number="true"
+          data-msg-number="Operand 1 must be a Number"
+        >
+        <label class="error" for="Operand1" id="Operand1Error"></label>
+        <br ><br >
 
-          <label class="m_formlabel" for="m_Operand2">Operand 2: </label>
-          <input type="text" id="m_Operand2" name="Operand2" size="15" maxlength="15">
-          <label class="m_error" for="m_Operand2" id="m_Operand2Error"></label>
-          <br><br>
+        <label class="formlabel">Operator: </label>
+        <label for="AddOperator">
+          <input
+            type="radio"
+            name="Operator"
+            id="AddOperator"
+            value="Add"
+            data-rule-required="true"
+            data-msg-required="Operator is Required"
+          >+
+        </label>
+        <label for="SubtractOperator">
+          <input
+            type="radio"
+            name="Operator"
+            id="SubtractOperator"
+            value="Subtract"
+          >-
+        </label>
+        <label for="MultiplyOperator">
+          <input
+            type="radio"
+            name="Operator"
+            id="MultiplyOperator"
+            value="Multiply"
+          >*
+        </label>
+        <label for="DivideOperator">
+          <input
+            type="radio"
+            name="Operator"
+            id="DivideOperator"
+            value="Divide"
+          >/
+        </label>
+        <label for="Operator" class="error" id="OperatorError"></label><!--When validating the HTML it gives the error "The value of the for attribute of the label element must be the ID of a non-hidden form control." However, it still works."-->
+        <br ><br >
 
-          <label class="m_formlabel">Result: </label>
-          <span id="m_Result"></span>
-          <br><br>
+        <label class="formlabel" for="Operand2">Operand 2: </label>
+        <input
+          type="text"
+          id="Operand2"
+          name="Operand2"
+          size="15"
+          maxlength="15"
+          data-rule-required="true"
+          data-msg-required="Operand 2 is Required"
+          data-rule-number="true"
+          data-msg-number="Operand 2 must be a Number"
+        >
+        <label class="error" for="Operand2" id="Operand2Error"></label>
+        <br ><br >
 
-          <input type="submit" value="Calculate" name="Calculate">
-          <input type="submit" value="Clear" name="Clear">
-        </fieldset>
-      </div>
-    </form>
-    <script src="assets/script.js"></script>
-  </div>
+        <label class="formlabel">Result: </label>
+        <span id="Result"></span>
+        <br ><br >
 
+        <input
+          type="submit"
+          value="Calculate"
+          name="Calculate"
+          onclick="calculate();"
+        >
+        <input
+          type="submit"
+          value="Clear"
+          name="Clear"
+          onclick="clearform();"
+          formnovalidate
+        >
+      </fieldset>
+    </div>
+  </form>
+  <script src="assets/script.js"></script>
 </body>
 </html>
