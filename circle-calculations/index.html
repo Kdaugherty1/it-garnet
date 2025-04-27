@@ -21,19 +21,18 @@
         data-rule-required="true"
         data-msg-required="Radius is Required"
         data-rule-number="true"
-        data-msg-number="Radius must be floating point number"
+        data-msg-number="Radius must be a floating point number"
         data-rule-min="0"
         data-msg-min="Radius must be greater than zero"
       />
       <label for="radius" class="error" id="radiuserror"></label>
       <br />
 
-      <label for="diameter" class="formlabel">Diameter:</label
-      ><span id="diameter"></span><br />
-      <label for="circumference" class="formlabel">Circumference:</label
-      ><span id="circumference"></span><br />
-      <label for="area" class="formlabel">Area:</label><span id="area"></span
-      ><br />
+      <label for="diameter" class="formlabel">Diameter:</label>
+      <span id="diameter"></span><br />
+      <label for="circumference" class="formlabel">Circumference:</label>
+      <span id="circumference"></span><br />
+      <label for="area" class="formlabel">Area:</label><span id="area"></span><br />
       <br /><br />
       <input
         type="submit"
@@ -51,59 +50,54 @@
     </form>
 
     <script>
-      $("#CircleForm").validate({});
+      $("#CircleForm").validate({
+        // Enable the validation on form submit
+        submitHandler: function(form) {
+          displayRadius();
+        }
+      });
 
       function displayRadius() {
         if ($("#CircleForm").valid()) {
-          document.getElementById("radius").innerHTML = "";
+          var radius = document.getElementById("radius").value;
 
-          var radius; // string representation of the radius
-          var radiusfp; // floating point value of radius
-          var diameter; // floating point diameter
-          var circumference; // floating point circumference
-          var area; // floating point area
-          var result; // displayable result
+          // Convert radius from string to floating point
+          var radiusfp = parseFloat(radius);
 
-          // read in radius as a string
-          radius = document.getElementById("radius").value;
+          // Calculate diameter, circumference, and area
+          var diameter = calcDiameter(radiusfp);
+          var circumference = calcCircumference(radiusfp);
+          var area = calcArea(radiusfp);
 
-          // convert radius from string to floating point
-          radiusfp = parseFloat(radius);
-
-          // calculate diameter, circumference, area
-          diameter = calcDiameter(radiusfp);
-          circumference = calcCircumference(radiusfp);
-          area = calcArea(radiusfp);
-
-          // display the hypotenuse
+          // Display the results
           document.getElementById("diameter").innerHTML = diameter.toString();
-          document.getElementById("circumference").innerHTML =
-            circumference.toString();
+          document.getElementById("circumference").innerHTML = circumference.toString();
           document.getElementById("area").innerHTML = area.toString();
         }
       }
 
-      // returns diameter of radius
+      // Calculate diameter of the circle
       function calcDiameter(radius) {
         return 2 * radius;
       }
 
-      //returns circumference of radius
+      // Calculate circumference of the circle
       function calcCircumference(radius) {
         return 2 * Math.PI * radius;
       }
 
-      //returns area of radius
+      // Calculate area of the circle
       function calcArea(radius) {
         return Math.PI * radius * radius;
       }
 
       function clearForm() {
+        // Clear the form and reset values
+        document.getElementById("radius").value = "";
         document.getElementById("diameter").innerHTML = "";
         document.getElementById("circumference").innerHTML = "";
         document.getElementById("area").innerHTML = "";
-        document.getElementById("radius").value = "";
-        document.getElementById("radiuserror").value = "";
+        document.getElementById("radiuserror").innerHTML = "";
       }
     </script>
   </body>
